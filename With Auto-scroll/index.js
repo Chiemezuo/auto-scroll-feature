@@ -33,7 +33,6 @@ function autoScroll() {
     const scrolledUpBy = $contentContainer.scrollTop
     const scrolledHeightPlusDisplayHeight = scrolledUpBy + $contentContainer.offsetHeight
 
-    console.log(`${contentAreaTotalHeight} - ${overallHeightOfLastMessage} = ${contentAreaTotalHeight - overallHeightOfLastMessage} <= ${scrolledHeightPlusDisplayHeight}`)
     // now, the calculation for balancing out the auto scrolling
     if (contentAreaTotalHeight - overallHeightOfLastMessage <= (scrolledHeightPlusDisplayHeight)) {
         $contentContainer.scrollTop = contentAreaTotalHeight
