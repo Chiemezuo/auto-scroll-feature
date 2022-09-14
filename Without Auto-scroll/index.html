@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+    <title>Without Auto Scroll</title>
+
+    <script id="template" type="text/html" defer>
+        <div id="dummy-text">
+            <h2>This is a representation of message number {{count}}</h2>
+        </div>
+    </script>
+</head>
+<body>
+    <div class="display-area">
+        <div class="sidebar">
+            <button id="populate">Add dummy text</button>
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+</body>
+</html>
